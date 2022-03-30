@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  font-family: 'Roboto', sans-serif;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+input, button, textarea, select {
+  font: inherit;
+  outline: none;
+  border: none;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+:root {
+  --gradient:linear-gradient( to left,#ec8b22 , #8fe3cb);
+  --orange-color: #ff7900;
+  --bg-black: #1c2024;
+}
+.container {
+    width: 100%;
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.boxed {
+  position: relative;
+  border-radius: 5px;
+  display: inline-block;
+}
+.boxed::before {
+  content:"";
+  position:absolute;
+  inset: 0;
+  border-radius:inherit; 
+  padding: 2px; 
+  -webkit-mask: 
+     linear-gradient(#fff 0 0) content-box, 
+     linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  background-image: var(--gradient);
+}
+
+.btn-primary {
+  display: inline-block;
+  background-image: var(--gradient);
+  font-size: 19px;
+  color: #fff;
+  font-weight: bold;
+  padding: 5px 30px;
+  border-radius: 5px;cursor: pointer;
+}
+.center {
+  display: flex;
+  width: fit-content;
+  margin: 0 auto;
+}
+.text-center {
+  text-align: center;
+}
+
+.section-title {
+  font-size: 40px;
+  color: var(--orange-color);
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.section-text {
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 10px;
+}

@@ -1,0 +1,32 @@
+.wrapper{
+    display: block;
+}
+
+.img-wrapper{
+    background-color: #1c2024;
+    position: relative;
+    padding: 10px 70px;
+    min-height: calc(15vh - 32px);
+}
+
+.img-wrapper img{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 0px;
+    width: 100% !important;
+    height: 100% ;
+    
+}
+.logo{
+    width: 10%;
+    
+}
+
+.crd--effect-1 .crd-img{
+    transform: scale(.9);
+    transition: .4s;
+}
+.crd--effect-1 .crd-img{
+    transform: scale(1);
+}
